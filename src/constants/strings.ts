@@ -1,4 +1,4 @@
-export const GAME_TITLE = 'Wonster'
+export const GAME_TITLE = 'Wonster-ita'
 
 export const WIN_MESSAGES = [
   'Sei un grande!',

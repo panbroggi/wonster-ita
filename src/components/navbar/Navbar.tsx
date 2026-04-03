@@ -16,19 +16,19 @@ export const Navbar = ({ setIsInfoModalOpen, setIsStatsModalOpen }: Props) => {
       <div className="navbar-content px-5 xshort:h-auto">
         <div className="flex">
           <InformationCircleIcon
-            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 cursor-pointer dark:stroke-black"
             onClick={() => setIsInfoModalOpen(true)}
           />
         </div>
-        <p className="text-xl font-bold dark:text-white">{GAME_TITLE}</p>
+        <p className="text-xl font-bold dark:text-black">{GAME_TITLE}</p>
         <div className="right-icons">
           <ChartBarIcon
-            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 cursor-pointer dark:stroke-black"
             onClick={() => setIsStatsModalOpen(true)}
           />
         </div>
       </div>
-      <hr></hr>
+       <hr className="dark:stroke-black"></hr>
     </div>
   )
 }

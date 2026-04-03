@@ -9,8 +9,8 @@ module.exports = {
         xxshort: { raw: '(max-height: 540px)' },
       },
       colors: {
-        'correct': '#99c23e',
-        'present': '#6646cc',
+        'correct': '#16AB1D',
+        'present': '#F5BE27',
       }
     },
   },
