@@ -1,34 +1,34 @@
 export const GAME_TITLE = 'Wonster'
 
 export const WIN_MESSAGES = [
-  'Best friends forever!',
-  'I like you',
-  'You are cool',
-  "Let's be friends",
-  'You are awesome',
-  'Me likes human',
+  'Sei un grande!',
+  'Mi piaci',
+  'Sei un figo',
+  "Vuoi essere mio amico?",
+  'Sei bellissimo',
+  'Mi piacciono gli umani',
 ]
-export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
-export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
-export const WORD_NOT_FOUND_MESSAGE = 'Unknown word'
+export const GAME_COPIED_MESSAGE = 'Gioco copiato negli appunti'
+export const NOT_ENOUGH_LETTERS_MESSAGE = 'Manca qualche lettera'
+export const WORD_NOT_FOUND_MESSAGE = 'Parola sconosciuta'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `The word was ${solution}`
+  `La parola era ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
-  `Must use ${guess} in position ${position}`
+  `Devi usare ${guess} in posizione ${position}`
 export const NOT_CONTAINED_MESSAGE = (letter: string) =>
-  `Guess must contain ${letter}`
-export const ENTER_TEXT = 'Enter'
-export const DELETE_TEXT = 'Delete'
-export const STATISTICS_TITLE = 'Statistics'
-export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
-export const NEW_WORD_TEXT = 'New monster in'
-export const SHARE_TEXT = 'Share'
-export const SHARE_FAILURE_TEXT = 'Unable to share the results.'
-export const TOTAL_TRIES_TEXT = 'Total tries'
-export const SUCCESS_RATE_TEXT = 'Success rate'
-export const CURRENT_STREAK_TEXT = 'Current streak'
-export const BEST_STREAK_TEXT = 'Best streak'
+  `Il tentativo deve contenere ${letter}`
+export const ENTER_TEXT = 'Invio'
+export const DELETE_TEXT = 'Canc'
+export const STATISTICS_TITLE = 'Statistica'
+export const GUESS_DISTRIBUTION_TEXT = 'Distribuzione Tentativi'
+export const NEW_WORD_TEXT = 'Prossimo mostro in'
+export const SHARE_TEXT = 'Condividi'
+export const SHARE_FAILURE_TEXT = 'Impossibile condividere il risultato.'
+export const TOTAL_TRIES_TEXT = 'Totale'
+export const SUCCESS_RATE_TEXT = 'Successo'
+export const CURRENT_STREAK_TEXT = 'Sequenza attuale'
+export const BEST_STREAK_TEXT = 'Miglior sequenza'
 export const WIN_INFO_MESSAGE = (name: string, tries: number, limit: number) =>
-  `${name} guessed the word of the day! 🎉 ${tries}/${limit}`
+  `${name} ha indovinato la parola del giorno! 🎉 ${tries}/${limit}`
 export const LOSE_INFO_MESSAGE = (name: string, limit: number) =>
-  `${name} failed to guess the word of the day 😅 X/${limit}`
+  `${name} non ha indovinato la parola del giorno 😅 X/${limit}`
