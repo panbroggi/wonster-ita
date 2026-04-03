@@ -3,6 +3,7 @@ import { default as GraphemeSplitter } from 'grapheme-splitter'
 
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { WORDLIST } from '../constants/wordlist'
+import { DICT_IT } from '../constants/dict'
 import { getToday } from './dateutils'
 import { getSeed } from './localStorage'
 import { getGuessStatuses } from './statuses'
@@ -12,7 +13,7 @@ export const firstGameDate = new Date(2024, 0)
 export const periodInDays = 1
 
 export const isWordInWordList = (word: string) => {
-  return WORDLIST.includes(localeAwareLowerCase(word))
+  return DICT_IT.includes(localeAwareLowerCase(word))
 }
 
 export const isWinningWord = (word: string) => {
