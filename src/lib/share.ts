@@ -10,12 +10,12 @@ export const shareStatus = (
   handleShareToClipboard: () => void,
   handleShareFailure: () => void
 ) => {
-  const solutionIndex = getCurrentSolution().solutionIndex
+  const solutionIndex = getCurrentSolution().solutionIndex -28 + 1551
   const textToShare =
-    `${GAME_TITLE} ${solutionIndex} ${
+    `${GAME_TITLE} n°${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}\n\n` +
-    generateEmojiGrid(solution, guesses, ['🟩', '🟪', '⬛'])
+    generateEmojiGrid(solution, guesses, ['🟩', '🟨', '⬜'])
 
   const shareData = { text: textToShare }
 

@@ -5,11 +5,11 @@ import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { WORDLIST } from '../constants/wordlist'
 import { DICT_IT } from '../constants/dict'
 import { getToday } from './dateutils'
-import { getSeed } from './localStorage'
+// import { getSeed } from './localStorage'
 import { getGuessStatuses } from './statuses'
 
-// 1 January 2024 Game Epoch
-export const firstGameDate = new Date(2024, 0)
+// 1 January 2022 Game Epoch
+export const firstGameDate = new Date(2022, 0, 3, 0, 0, 0, 0);
 export const periodInDays = 1
 
 export const isWordInWordList = (word: string) => {
@@ -103,7 +103,7 @@ export const getIndex = (gameDate: Date) => {
     (gameDate.valueOf() - firstGameDate.valueOf()) / oneDay
   )
 
-  let index = (diffDays + getSeed().seed) % WORDLIST.length
+  let index = (diffDays+1) % WORDLIST.length
   if (index < 0) {
     throw new Error('Invalid index')
   }
