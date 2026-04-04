@@ -26,10 +26,10 @@ export const Key = ({
   const keyDelayMs = REVEAL_TIME_MS * solution.length
 
   const classes = classnames(
-    'xxshort:h-8 xxshort:w-8 xxshort:text-xxs xshort:w-10 xshort:h-10 flex short:h-12 h-14 items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-white',
+    'xxshort:h-8 xxshort:w-8 xxshort:text-xxs xshort:w-10 xshort:h-10 flex short:h-12 h-14 border-solid border-2 border-slate-500 items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-black',
     {
       'transition ease-in-out': isRevealing,
-      'bg-slate-600': !status,
+      'bg-slate-300': !status,
       'bg-slate-400 text-black-900': status === 'absent',
       'bg-correct text-white': status === 'correct',
       'bg-present text-white': status === 'present',

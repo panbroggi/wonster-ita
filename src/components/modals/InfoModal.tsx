@@ -10,14 +10,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Come si gioca" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Un tempo gli umani combattevano i mostri, ma presto scoprirono che è meglio
-        ingraziarseli. Per farti amico un mostro devi indovinare la sua parola
-        preferita. Grazie pietroppeter!
+        Un tempo gli umani combattevano i mostri, ma presto scoprirono che è
+        meglio ingraziarseli. Per farti amico un mostro devi indovinare la sua
+        parola preferita. Grazie pietroppeter!
       </p>
 
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Indovina la parola in 6 mosse. Dopo ogni tentativo, il colore delle celle
-        cambierà per mostrare quanto ti sei avvicinato alla parola giusta.
+        Indovina la parola in 6 mosse. Dopo ogni tentativo, il colore delle
+        celle cambierà per mostrare quanto ti sei avvicinato alla parola giusta.
       </p>
 
       <div className="mb-1 mt-4 flex justify-center">

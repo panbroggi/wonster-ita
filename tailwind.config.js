@@ -9,9 +9,9 @@ module.exports = {
         xxshort: { raw: '(max-height: 540px)' },
       },
       colors: {
-        'correct': '#16AB1D',
-        'present': '#F5BE27',
-      }
+        correct: '#16AB1D',
+        present: '#F5BE27',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

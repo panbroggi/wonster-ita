@@ -1,4 +1,4 @@
-export const DICT_IT=`which
+export const DICT_IT = `which
 abaco
 abata
 abate

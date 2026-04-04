@@ -12,7 +12,7 @@ type Props = {
 
 export const Navbar = ({ setIsInfoModalOpen, setIsStatsModalOpen }: Props) => {
   return (
-    <div className="navbar">
+    <div className="navbar bg-slate-400">
       <div className="navbar-content px-5 xshort:h-auto">
         <div className="flex">
           <InformationCircleIcon
@@ -28,7 +28,7 @@ export const Navbar = ({ setIsInfoModalOpen, setIsStatsModalOpen }: Props) => {
           />
         </div>
       </div>
-       <hr className="dark:stroke-black"></hr>
+      <hr className="dark:stroke-black"></hr>
     </div>
   )
 }

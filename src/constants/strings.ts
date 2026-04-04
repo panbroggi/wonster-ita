@@ -4,7 +4,7 @@ export const WIN_MESSAGES = [
   'Sei un grande!',
   'Mi piaci',
   'Sei un figo',
-  "Vuoi essere mio amico?",
+  'Vuoi essere mio amico?',
   'Sei bellissimo',
   'Mi piacciono gli umani',
 ]

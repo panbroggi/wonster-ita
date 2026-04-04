@@ -10,7 +10,7 @@ export const shareStatus = (
   handleShareToClipboard: () => void,
   handleShareFailure: () => void
 ) => {
-  const solutionIndex = getCurrentSolution().solutionIndex -28 + 1551
+  const solutionIndex = getCurrentSolution().solutionIndex - 28 + 1551
   const textToShare =
     `${GAME_TITLE} n°${solutionIndex} ${
       lost ? 'X' : guesses.length
